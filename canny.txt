@@ -1,0 +1,13 @@
+-> Main
+   -> read_pgm_image
+   -> canny
+      -> gaussian_smooth
+         -> make_gaussian_kernel
+      -> derrivative_x_y
+      -> radian_direction
+         ->angle_radians
+      -> magnitude_x_y
+      -> non_max_supp
+      -> apply_hysteresis
+         -> follow_edges
+   -> write_pgm_image
